@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+h5{
+    text-align: center;
+}
+
+#tabela{
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
+
+#corpo{
+    padding-top: 20px;
+}
+
+#oninput{
+    padding-top: 20px;
+    width: 400px;
+}
+
+div img{
+    width: 100px;
+    height: 180px;
+}
+.row{
+    margin: auto;
+}
+
+.card{
+    margin: 10px auto;
+}

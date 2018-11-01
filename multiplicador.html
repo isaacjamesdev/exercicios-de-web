@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multiplicador Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- CABECARIO -->
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Multiplicador Input desabled</h1>
+                    <p class="lead">Lista de exercícios 4.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Home |</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Multiplicador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="multiplicadorOninput.html">Multiplicador Oninput</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imc.html">IMC</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Notícias</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- FORMULARIO -->
+        <form style="margin-top: 20px">
+            <div class="form-group">
+                <input type="number" class="form-control" id="input-valor" placeholder="Valor" onkeyup="multiplicarInput()" onchange="multiplicarInput()">
+                <small id="valorHelp" class="form-text text-muted">Entre com o valor do produto</small>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="input-quantidade" placeholder="Quantidade" onkeyup="multiplicarInput()" onchange="multiplicarInput()">
+                <small id="quantidadeHelp" class="form-text text-muted">Entre com a quantidade de produto</small>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="multiplicarInput()">Calcular</button>
+            <div class="form-group">
+                <label>Resultado:</label>
+                <input type="number" class="form-control" id="input-resultado" placeholder="Resultado" disabled>
+                <small id="resultadoHelp" class="form-text text-muted">Este é o resultado da multiplicação</small>
+            </div>
+        </form>
+    </div>
+    <!-- RODAPE -->
+    <footer>
+        <small>All rights reserved &copy; - Isaac James 2018</small>
+    </footer>
+    <script src="js/script4.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
